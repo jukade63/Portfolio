@@ -1,0 +1,280 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adil's portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-home">
+      <header>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </header>
+      <section class="home" id="home">
+        <img src="./img//profile.jpg" alt="profile-image" width="250" />
+        <div class="home-text">
+          <h2>Hello, I'm</h2>
+          <h1>Adil Wadu</h1>
+          <p>
+            Web Developer based in Thailand. I build websites both frontend and
+            backend, usually using Javascript framework such as React, Nextjs
+            and Nodejs.
+          </p>
+          <a href="#about" class="btn">About Me</a>
+        </div>
+        <div class="social">
+          <a href="#"><img src="./img/facebook.svg" alt="facebook" /></a>
+          <a href="#"><img src="./img/linkedin.svg" alt="linkedin" /></a>
+          <a href="#"><img src="./img/github.svg" alt="github" /></a>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <div class="grid">
+        <section class="about-section" id="about">
+          <div class="about-text">
+            <h2 class="title">About me</h2>
+            <div>
+              <p>
+                Software developer with ability to learn and adapt in both
+                self-starting and collaborative environtments while staying
+                focused on achieving high-quality results. I studied extensively
+                for the past 3 years, including a 6-month fullstack Javascript
+                codecamp and successfully created my fullstack web application
+                from scratch, starting from figma design to building Rest APIs,
+                managing authentication and database integration. I always keep
+                updating my knowledge to improve my work especially with
+                fast-moving technologies.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="skill-section">
+          <div>
+            <h2 class="title">Key skills</h2>
+            <ul class="skills">
+              <li>Programming languages : HTML, CSS, Javacript, Typescript</li>
+              <li>
+                Front-end frameworks : React, Nextjs, Tailwind, Material UI
+              </li>
+              <li>Back-end frameworks: Nodejs, Express</li>
+              <li>Database : MySQL, MongoDB, PosgresQL</li>
+              <li>ORM, ODM : Sequelize, Prisma, Mongoogse</li>
+              <li>Version Control (Git)</li>
+              <li>Other tools : Jira, Confluent, Slack</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="grid">
+        <section class="education-section">
+          <h2 class="title">Education</h2>
+          <div class="education-card">
+            <h3 class="heading">Computer Science</h3>
+            <span>@ University of the People</span>
+            <p class="text-small underlined">2019 - Present</p>
+            <ul>
+              <li>cGPA: 3.81</li>
+              <li>
+                Courses taken: Computer system, programming basic, programming
+                1, programming 2, Web programming, Operating system, Statistics,
+                College algebra.
+              </li>
+            </ul>
+          </div>
+          <div class="education-card">
+            <h3 class="heading">CodeCamp Fullstack Developer #13</h3>
+            <span>@ Software Park Thailand</span>
+            <p class="text-small underlined">May 2022 - Aug 2022</p>
+            <ul>
+              <li>Learned basic html, css, javascript</li>
+              <li>Learned front-end framework (React)</li>
+              <li>Learned back-end technologies (Nodejs, Express)</li>
+              <li>Built fullstack project using React, Express, and MySQL</li>
+            </ul>
+          </div>
+          <div class="education-card">
+            <h3 class="heading">Bachelor of Pharmacy</h3>
+            <span>@ Walailak University</span>
+            <p class="text-small underlined">2008 - 2013</p>
+          </div>
+        </section>
+        <section class="experience-section">
+          <h2 class="title">Work Experience</h2>
+          <div class="experience-card">
+            <h3 class="heading">Software developer</h3>
+            <span>@ Shippop</span>
+            <p class="text-small underlined">Dec - 2022</p>
+            <ul>
+              <li>
+                Developed new internal admin page that keeps track of
+                long-waiting on-delivery orders. The new page displays data from
+                database in pages and be able of exporting to spreadsheet file.
+              </li>
+              <li>
+                Pushed codes to git-based cloud to get the code reviewed, and
+                released.
+              </li>
+              <li>
+                Worked collaboratively under agile both onsite and remotely by
+                leveraging PMS tools like Jira, Slack and so on.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <section class="project-section" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="project-cards">
+          <div class="card-container">
+            <h3>Tell your pharmacist</h3>
+            <div class="wrapper">
+              <img src="./img/tell-your-pharmacist.gif" alt="" />
+              <div class="info">
+                <p>
+                  Telepharmacy application where on customer side, customer
+                  could find avalaible pharmacies based on current geolocation,
+                  have chat with pharmacist, and perform payment while pharmacy
+                  could use the app to receive contacts, manage orders and
+                  stocks
+                </p>
+                <p class="tech-stacks">
+                  Tech Stacks : Nodejs, React, Material UI, Sequelize, JWT,
+                  Google APIs, Stripe, Firebase
+                </p>
+                <div class="actions">
+                  <a href="https://next-switter.vercel.app/" target="_blank"
+                    ><button>Live demo</button></a
+                  >
+                  <a
+                    href="https://github.com/jukade63/next-switter"
+                    target="_blank"
+                    ><button>Code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <h3>Switter</h3>
+            <div class="wrapper">
+              <img src="./img/next-switter.png" alt="" />
+              <div class="info">
+                <p>
+                  Twitter clone app where users can post, comment, and follow
+                  other users
+                </p>
+                <p class="tech-stacks">
+                  Tech Stacks : Nextjs, Typescript, TailwindCSS, Next-auth,
+                  Prisma, MongoDB
+                </p>
+                <div class="actions">
+                  <a href="https://next-switter.vercel.app/" target="_blank"
+                    ><button>Live demo</button></a
+                  >
+                  <a
+                    href="https://github.com/jukade63/next-switter"
+                    target="_blank"
+                    ><button>Code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <h3>Calculator</h3>
+            <div class="wrapper">
+              <img src="./img/calculator.png" alt="" />
+              <div class="info">
+                <p>
+                  Basic calculator with basic UI functions namely addition,
+                  subtraction, multiplication, and division.
+                </p>
+                <p class="tech-stacks">Tech Stacks : Javacript, HTML, CSS</p>
+                <div class="actions">
+                  <a
+                    href="https://jukade63.github.io/calculator/"
+                    target="_blank"
+                    ><button>Live demo</button></a
+                  >
+                  <a
+                    href="https://github.com/jukade63/calculator"
+                    target="_blank"
+                    ><button>Code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <h3>Admin dashboard</h3>
+            <div class="wrapper">
+              <img src="./img/admin-dashboard.png" alt="" />
+              <div class="info">
+                <p>
+                  A static admin main page built with css grid primarily for
+                  desktop use.
+                </p>
+                <p class="tech-stacks">Tech Stacks : Javacript, HTML, CSS</p>
+                <div class="actions">
+                  <a
+                    href="https://jukade63.github.io/calculator/"
+                    target="_blank"
+                    ><button>Live demo</button></a
+                  >
+                  <a
+                    href="https://github.com/jukade63/calculator"
+                    target="_blank"
+                    ><button>Code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="center">
+            <h3>Let's talk about everything</h3>
+            <p>Don't like forms? Send me an email.</p>
+          </div>
+
+          <div class="action">
+            <form>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your email"
+                required
+              />
+              <input type="submit" name="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
