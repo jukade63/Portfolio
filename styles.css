@@ -418,10 +418,9 @@ header.sticky {
 
 .contact {
   background: rgb(133, 53, 230);
-  width: 500px;
+  max-width: 500px;
   min-width: 400px;
-  padding: 30px 60px;
-  margin: 20px auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
