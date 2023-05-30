@@ -3,12 +3,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  line-height: 1.5;
-  letter-spacing: 1.1;
+  letter-spacing: 1.02;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-size: large;
-  font-weight: 400;
   color: var(--color-secondary);
 }
 
@@ -18,8 +15,8 @@
   --color-primary: #53d8cd;
   --color-secondary: #cbc9cf;
   --color-title: rgb(218, 158, 45);
-  --font-header: 5rem;
-  --font-title: 3rem;
+  --font-header: 4rem;
+  --font-title: 2rem;
   --font-text: 1.1rem;
 }
 
@@ -34,7 +31,7 @@ p {
 }
 
 li {
-  line-height: 1.8;
+  line-height: 1.5;
 }
 ul {
   list-style: none;
@@ -44,14 +41,7 @@ a {
   font-weight: 500;
   color: var(--color-text);
 }
-button {
-  background: var(--color-primary);
-  color: var(--color-bg);
-  border-radius: 0.5em;
-  padding: 0.3em 0.6em;
-  border: none;
-  cursor: pointer;
-}
+
 .text-small {
   font-size: 14px;
 }
@@ -124,6 +114,39 @@ ul.navbar {
   cursor: pointer;
   display: none;
 }
+
+.btn-resume{
+  font-size: var(--font-text);
+  max-width: 180px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-resume:hover {
+    transform: scale(1.1);
+    background: var(--color-bg);
+    color: white;
+    border: 2px solid var(--color-primary);
+} 
+
+.btn-resume span {
+  color: var(--color-bg)
+}
+.btn-resume:hover span{
+  color: var(--color-primary);
+}
+.btn-resume:hover #download-icon{
+  color: var(--color-primary);
+}
+
+#download-icon {
+  color: var(--color-bg);
+  font-size: 25px;
+}
+
 section {
   padding: 100px 18%;
 }
@@ -134,8 +157,8 @@ section {
 }
 
 .home {
-  min-height: 100vh;
   width: 100%;
+  height: 100vh;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -147,6 +170,8 @@ section {
   color: var(--color-title);
   font-size: var(--font-title);
   font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .underlined {
@@ -159,14 +184,10 @@ section {
   font-size: var(--font-header);
   line-height: 1;
   font-weight: 500;
-  font-size: 52px;
+  font-size: 40px;
   color: var(--color-title);
 }
-.home-text h5 {
-  margin-bottom: 23px;
-  font-size: 19px;
-  font-weight: 500;
-}
+
 .home-text h2 {
   color: var(--color-primary);
   font-size: 25px;
@@ -177,12 +198,14 @@ section {
   margin-bottom: 20px;
   max-width: 450px;
   margin: 0 auto;
-  text-align: justify;
   margin-bottom: 1.5em;
 }
 .home > img {
   border-radius: 50%;
   margin-bottom: 10px;
+}
+.home-text a {
+  display: inline-block;
 }
 
 .social {
@@ -222,21 +245,13 @@ section {
 }
 
 .btn {
-  display: inline-block;
   color: var(--color-bg);
   background: var(--color-primary);
-  font-size: var(--font-text);
-  padding: 10px 40px;
-  font-weight: 500;
-  line-height: 24px;
+  border: none;
   border-radius: 30px;
+  padding: .6em 1em;
   transition: ease 0.4s;
-}
-.btn:hover {
-  transform: scale(1.1);
-  background: var(--color-bg);
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  cursor: pointer;
 }
 .home-img img {
   width: 400px;
@@ -273,6 +288,14 @@ header.sticky {
 .skills {
   margin-left: 2rem;
 }
+.about-section,
+.skill-section,
+.education-section,
+.experience-section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 .skills li::before,
 .education-card ul li::before,
 .experience-card ul li::before {
@@ -281,7 +304,7 @@ header.sticky {
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1.2em;
+  margin-left: -1.02em;
 }
 .experience h3 {
   font-size: 1.5rem;
@@ -289,6 +312,10 @@ header.sticky {
 }
 .education-card {
   margin-bottom: 15px;
+}
+.education-card p {
+  margin-left: 25px;
+  margin-top: 5px;
 }
 .experience-card ul,
 .education-card ul {
@@ -305,62 +332,11 @@ header.sticky {
   font-size: 1.5rem;
 }
 
-.contact {
-  background: #8067f0eb;
-  width: 64%;
-  margin: 100px auto;
-  padding: 70px 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 12px;
-  background-image: url(../img/intro.png);
-  background-size: cover;
-}
-.center h3 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 3px;
-  color: var(--color-bg);
-}
-.center p {
-  font-size: var(--font-text);
-  color: var(--color-bg);
-  line-height: 26px;
-  margin-bottom: 25px;
-}
-.contact .action form input[type="email"] {
-  max-width: 100%;
-  width: 470px;
-  padding: 12px 15px;
-  background: var(--color-bg);
-  color: var(--color-text);
-  border: none;
-  outline: none;
-  margin: 0 10px 20px 0;
-  border-radius: 30px;
-}
-.contact .action form input[type="submit"] {
-  padding: 12px 40px;
-  background: var(--color-primary);
-  color: var(--color-bg);
-  border: none;
-  outline: none;
-  margin: 0 10px 20px 0;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.ends {
-  text-align: center;
-  padding: 40px;
-}
 .project-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 .card-container {
   display: flex;
@@ -414,9 +390,11 @@ header.sticky {
   margin: 10px;
   letter-spacing: normal;
   font-size: 14px;
+  color: var(--color-bg)
 }
 .actions button:hover {
-  background: #83ebe2;
+  background: #33bdb2
+
 }
 .card-container .actions {
   opacity: 0;
@@ -438,6 +416,70 @@ header.sticky {
   opacity: 1;
 }
 
+.contact {
+  background: rgb(133, 53, 230);
+  width: 500px;
+  min-width: 400px;
+  padding: 30px 60px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+ .contact h3 {
+  color: white;
+ }
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-top: 20px;
+
+}
+
+form input, form textarea {
+  width: 350;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--color-bg);
+  background: rgb(236, 232, 232);
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+form input:focus, form textarea:focus{
+  background: white;
+  border: 2px solid rgb(255, 136, 0);
+}
+
+form button {
+  width: 125px;
+  font-size: 1.05rem;
+  align-self: center;
+  color: rgb(43, 42, 42) !important;
+  margin-top: 5px;
+}
+
+form button:hover {
+  background: #38b5aa
+}
+
+form button:disabled {
+  background: rgb(91, 90, 90);
+  color: black;
+}
+
+form p{
+  color: rgb(241, 237, 231);
+  transition: 0.2s;
+}
+
 @media (max-width: 1425px) {
   header {
     padding: 16px 3%;
@@ -448,17 +490,7 @@ header.sticky {
     transition: 0.3s;
   }
   section {
-    padding: 70px 3%;
-    transition: 0.3s;
-  }
-  .contact {
-    width: 95%;
-    transition: 0.3s;
-  }
-  :root {
-    --font-header: 4rem;
-    --font-title: 2.3rem;
-    --font-text: 1rem;
+    padding: 40px 5%;
     transition: 0.3s;
   }
 }
@@ -499,7 +531,7 @@ header.sticky {
 @media (max-width: 800px) {
   .home {
     grid-template-columns: 1fr;
-    min-height: 130vh;
+    /* min-height: 130vh; */
     grid-gap: 1rem;
   }
   .home-text {
@@ -536,8 +568,4 @@ header.sticky {
     padding: 0 10px;
   }
 }
-@media (max-width: 540px) {
-  .contact .action form input[type="email"] {
-    width: 310px;
-  }
-}
+

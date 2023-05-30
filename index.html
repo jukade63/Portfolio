@@ -28,7 +28,7 @@
         <div class="bx bx-menu" id="menu-icon"></div>
       </header>
       <section class="home" id="home">
-        <img src="./img//profile.jpg" alt="profile-image" width="250" />
+        <img src="./img//profile.png" alt="profile-image" width="250" class="profile-img"/>
         <div class="home-text">
           <h2>Hello, I'm</h2>
           <h1>Adil Wadu</h1>
@@ -37,7 +37,12 @@
             backend, usually using Javascript framework such as React, Nextjs
             and Nodejs.
           </p>
-          <a href="#about" class="btn">About Me</a>
+          <a href="./files/Adil Wadu's Resume.pdf" download=""><button class="btn btn-resume">
+            <span>Resume</span>
+            <i class="bx bx-download" id="download-icon"></i>
+          </button></a>
+          
+         
         </div>
         <div class="social">
           <a href="#"><img src="./img/facebook.svg" alt="facebook" /></a>
@@ -50,7 +55,7 @@
       <div class="grid">
         <section class="about-section" id="about">
           <div class="about-text">
-            <h2 class="title">About me</h2>
+            <h2 class="title">Career objective</h2>
             <div>
               <p>
                 Software developer with ability to learn and adapt in both
@@ -60,7 +65,7 @@
                 codecamp and successfully created my fullstack web application
                 from scratch, starting from figma design to building Rest APIs,
                 managing authentication and database integration. I always keep
-                updating my knowledge to improve my work especially with
+                updating my knowledge for improving my works especially with
                 fast-moving technologies.
               </p>
             </div>
@@ -71,14 +76,12 @@
             <h2 class="title">Key skills</h2>
             <ul class="skills">
               <li>Programming languages : HTML, CSS, Javacript, Typescript</li>
-              <li>
-                Front-end frameworks : React, Nextjs, Tailwind, Material UI
-              </li>
+              <li>Front-end frameworks : React, Nextjs, Tailwind, Material UI</li>
               <li>Back-end frameworks: Nodejs, Express</li>
               <li>Database : MySQL, MongoDB, PosgresQL</li>
               <li>ORM, ODM : Sequelize, Prisma, Mongoogse</li>
-              <li>Version Control (Git)</li>
-              <li>Other tools : Jira, Confluent, Slack</li>
+              <li>Version Control: Git, Github, Gitlab, Butbucket</li>
+              <li>Collaboration and Other tools : Jira, Confluent, Slack</li>
             </ul>
           </div>
         </section>
@@ -93,11 +96,9 @@
             <p class="text-small underlined">2019 - Present</p>
             <ul>
               <li>cGPA: 3.81</li>
-              <li>
-                Courses taken: Computer system, programming basic, programming
+              <li>Courses taken: Computer system, programming basic, programming
                 1, programming 2, Web programming, Operating system, Statistics,
-                College algebra.
-              </li>
+                College algebra.</li>
             </ul>
           </div>
           <div class="education-card">
@@ -112,6 +113,16 @@
             </ul>
           </div>
           <div class="education-card">
+            <h3 class="heading">Full Stack Javacript</h3>
+            <span>@ The Odin Project</span>
+            <p class="text-small underlined">Mar 2023- Present</p>
+            <ul>
+              <li>Learned advanced Javascript (Linting, Webpack, Asynchronous, APIs)</li>
+              <li>Learned intemediate, advanced HTML and CSS (Animation, Accessibility, Responsive design)</li>
+              <li>Built projects (Calculator, Admin Dashboard, Restaurant page)</li>
+            </ul>
+          </div>
+          <div class="education-card">
             <h3 class="heading">Bachelor of Pharmacy</h3>
             <span>@ Walailak University</span>
             <p class="text-small underlined">2008 - 2013</p>
@@ -120,15 +131,13 @@
         <section class="experience-section">
           <h2 class="title">Work Experience</h2>
           <div class="experience-card">
-            <h3 class="heading">Software developer</h3>
+            <h3 class="heading">Software engineer</h3>
             <span>@ Shippop</span>
             <p class="text-small underlined">Dec - 2022</p>
             <ul>
-              <li>
-                Developed new internal admin page that keeps track of
+              <li>Developed new internal admin page that keeps track of
                 long-waiting on-delivery orders. The new page displays data from
-                database in pages and be able of exporting to spreadsheet file.
-              </li>
+                database in pages and be able of exporting to spreadsheet file.</li>
               <li>
                 Pushed codes to git-based cloud to get the code reviewed, and
                 released.
@@ -143,7 +152,7 @@
       </div>
 
       <section class="project-section" id="projects">
-        <h2 class="title">Projects</h2>
+        <h2 class="title">Personal projects</h2>
         <div class="project-cards">
           <div class="card-container">
             <h3>Tell your pharmacist</h3>
@@ -158,17 +167,17 @@
                   stocks
                 </p>
                 <p class="tech-stacks">
-                  Tech Stacks : Nodejs, React, Material UI, Sequelize, JWT,
-                  Google APIs, Stripe, Firebase
+                  Tech used : Nodejs, React, Material UI, Sequelize, MySQL, JWT, Google
+                  APIs, Stripe, Firebase
                 </p>
                 <div class="actions">
                   <a href="https://next-switter.vercel.app/" target="_blank"
-                    ><button>Live demo</button></a
+                    ><button  class="btn">Live demo</button></a
                   >
                   <a
                     href="https://github.com/jukade63/next-switter"
                     target="_blank"
-                    ><button>Code</button></a
+                    ><button  class="btn">Code</button></a
                   >
                 </div>
               </div>
@@ -184,17 +193,41 @@
                   other users
                 </p>
                 <p class="tech-stacks">
-                  Tech Stacks : Nextjs, Typescript, TailwindCSS, Next-auth,
+                  Tech used : Nextjs, Typescript, TailwindCSS, Next-auth,
                   Prisma, MongoDB
                 </p>
                 <div class="actions">
                   <a href="https://next-switter.vercel.app/" target="_blank"
-                    ><button>Live demo</button></a
+                    ><button  class="btn">Live demo</button></a
                   >
                   <a
                     href="https://github.com/jukade63/next-switter"
                     target="_blank"
-                    ><button>Code</button></a
+                    ><button  class="btn">Code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <h3>Pollucheck</h3>
+            <div class="wrapper">
+              <img src="./img/pollucheck.png" alt="" />
+              <div class="info">
+                <p>
+                  A web-based application for tracking local air quality
+                  indexes(AQI) around the world. The data used to display in bar
+                  chart and as related background image were from obtained public API.
+                </p>
+                <p class="tech-stacks">Tech used : React, Recharts, Tailwind</p>
+                <div class="actions">
+                  <a href="https://pollucheck.vercel.app/" target="_blank"
+                    ><button  class="btn">Live demo</button></a
+                  >
+                  <a
+                    href="https://github.com/jukade63/pollucheck"
+                    target="_blank"
+                    ><button  class="btn">Code</button></a
                   >
                 </div>
               </div>
@@ -209,17 +242,17 @@
                   Basic calculator with basic UI functions namely addition,
                   subtraction, multiplication, and division.
                 </p>
-                <p class="tech-stacks">Tech Stacks : Javacript, HTML, CSS</p>
+                <p class="tech-stacks">Tech used : Javacript, HTML, CSS</p>
                 <div class="actions">
                   <a
                     href="https://jukade63.github.io/calculator/"
                     target="_blank"
-                    ><button>Live demo</button></a
+                    ><button  class="btn">Live demo</button></a
                   >
                   <a
                     href="https://github.com/jukade63/calculator"
                     target="_blank"
-                    ><button>Code</button></a
+                    ><button  class="btn">Code</button></a
                   >
                 </div>
               </div>
@@ -234,46 +267,75 @@
                   A static admin main page built with css grid primarily for
                   desktop use.
                 </p>
-                <p class="tech-stacks">Tech Stacks : Javacript, HTML, CSS</p>
+                <p class="tech-stacks">Tech used : Javacript, HTML, CSS</p>
                 <div class="actions">
                   <a
                     href="https://jukade63.github.io/calculator/"
                     target="_blank"
-                    ><button>Live demo</button></a
+                    ><button  class="btn">Live demo</button></a
                   >
                   <a
                     href="https://github.com/jukade63/calculator"
                     target="_blank"
-                    ><button>Code</button></a
+                    ><button class="btn">Code</button></a
                   >
                 </div>
               </div>
             </div>
           </div>
+          <div class="card-container">
+            <h3>Restaurant Page</h3>
+            <div class="wrapper">
+              <img src="./img/restaurant-page.png" alt="" />
+              <div class="info">
+                <p>
+                  Provide static indormation about opening time for the restaurant, available menus, 
+                  and contact channel 
+                </p>
+                <p class="tech-stacks">Tech used : Javacript, HTML, CSS, Webpack</p>
+                <div class="actions">
+                  <a
+                    href="https://jukade63.github.io/TOP-Restaurant-Page/"
+                    target="_blank"
+                    ><button class="btn">Live demo</button></a
+                  >
+                  <a
+                    href="https://github.com/jukade63/TOP-Restaurant-Page"
+                    target="_blank"
+                    ><button class="btn">Code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+         
         </div>
       </section>
 
       <section class="contact" id="contact">
         <div class="container">
-          <div class="center">
-            <h3>Let's talk about everything</h3>
-            <p>Don't like forms? Send me an email.</p>
-          </div>
-
-          <div class="action">
-            <form>
+          <h3>Send me an email</h3>
+          <form>
               <input
                 type="email"
-                name="email"
-                placeholder="Enter Your email"
+                name="from"
+                placeholder="Your email"
                 required
               />
-              <input type="submit" name="submit" value="Submit" />
+              <textarea
+                type="text"
+                name="message"
+                placeholder="Message"
+                rows="7"
+                required
+                ></textarea>
+              <button class="btn" type="submit" name="submit" id="submit">Send</button>
+              <p></p>
             </form>
           </div>
-        </div>
       </section>
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
