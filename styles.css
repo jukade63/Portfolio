@@ -416,6 +416,27 @@ header.sticky {
   opacity: 1;
 }
 
+.more-projects{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 50px 0;
+}
+
+.more-projects a{
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-title);
+  border-radius: 10px;
+  border: 1px solid var(--color-title);
+  transition: 0.3s;
+
+}
+.more-projects a:hover{
+  background-color: black;
+}
+
 .contact {
   background: rgb(133, 53, 230);
   max-width: 500px;
