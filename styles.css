@@ -33,6 +33,7 @@ p {
 li {
   line-height: 1.5;
 }
+
 ul {
   list-style: none;
 }
@@ -45,12 +46,15 @@ a {
 .text-small {
   font-size: 14px;
 }
+
 .navbar ul {
   list-style: none;
 }
+
 .navbar li a {
   position: relative;
 }
+
 .navbar li a::after {
   content: "";
   position: absolute;
@@ -61,19 +65,24 @@ a {
   left: 0;
   transition: all 0.4s;
 }
+
 .navbar li a:hover::after {
   width: 100%;
 }
+
 .navbar a .active {
   color: var(--color-primary);
 }
+
 .container {
   margin: 0 50px;
 }
+
 .container-home {
   background: linear-gradient(#634444, #2a1d1d);
   padding: 0 50px;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -87,21 +96,26 @@ header {
   transition: 0.3s;
   z-index: 1000;
 }
+
 .heading {
   display: inline-block;
 }
+
 .heading::before {
   content: "\279C";
   color: var(--color-title);
   margin-right: 5px;
 }
+
 .navbar {
   display: inline-flex;
   flex-wrap: wrap;
 }
+
 ul.navbar {
   list-style: none;
 }
+
 .navbar li {
   position: relative;
   margin-inline: 7px;
@@ -115,7 +129,7 @@ ul.navbar {
   display: none;
 }
 
-.btn-resume{
+.btn-resume {
   font-size: var(--font-text);
   max-width: 180px;
   margin-inline: auto;
@@ -126,19 +140,21 @@ ul.navbar {
 }
 
 .btn-resume:hover {
-    transform: scale(1.1);
-    background: var(--color-bg);
-    color: white;
-    border: 2px solid var(--color-primary);
-} 
+  transform: scale(1.1);
+  background: var(--color-bg);
+  color: white;
+  border: 2px solid var(--color-primary);
+}
 
 .btn-resume span {
   color: var(--color-bg)
 }
-.btn-resume:hover span{
+
+.btn-resume:hover span {
   color: var(--color-primary);
 }
-.btn-resume:hover #download-icon{
+
+.btn-resume:hover #download-icon {
   color: var(--color-primary);
 }
 
@@ -150,6 +166,7 @@ ul.navbar {
 section {
   padding: 100px 18%;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -166,6 +183,7 @@ section {
   grid-gap: 2rem;
   text-align: center;
 }
+
 .title {
   color: var(--color-title);
   font-size: var(--font-title);
@@ -193,17 +211,48 @@ section {
   font-size: 25px;
   font-weight: 500;
 }
+
 .home-text p {
   color: var(--color-secondary);
-  margin-bottom: 20px;
-  max-width: 450px;
-  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   margin-bottom: 1.5em;
+  font-weight: 500;
+  animation: animate-phrase 6s steps(50) 1s normal both running;
+  white-space: nowrap;
+  max-width: fit-content;
+  overflow: hidden;
 }
-.home > img {
+
+@-webkit-keyframes animate-phrase {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes animate-phrase {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+
+.home>img {
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
 .home-text a {
   display: inline-block;
 }
@@ -216,6 +265,7 @@ section {
   top: 55%;
   right: 20px;
 }
+
 .social a {
   padding: 2px;
   width: 35px;
@@ -228,6 +278,7 @@ section {
   font-size: 17px;
   margin: 10px auto;
 }
+
 .social a::before {
   color: #ffffff;
 }
@@ -236,6 +287,7 @@ section {
   background: var(--color-title);
   transition: all 0.5s;
 }
+
 .social::after {
   content: "";
   width: 2px;
@@ -253,15 +305,18 @@ section {
   transition: ease 0.4s;
   cursor: pointer;
 }
+
 .home-img img {
   width: 400px;
   height: auto;
 }
+
 header.sticky {
   background: var(--color-bg);
   padding: 13px 18%;
   box-shadow: 0px 0px 10px rgb(0 0 0/10%);
 }
+
 .items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -285,9 +340,11 @@ header.sticky {
 .about-text p {
   line-height: 1.5;
 }
+
 .skills {
   margin-left: 2rem;
 }
+
 .about-section,
 .skill-section,
 .education-section,
@@ -296,27 +353,35 @@ header.sticky {
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
 .skills li::before,
 .education-card ul li::before,
 .experience-card ul li::before {
   content: "\2022";
   color: var(--color-title);
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
   margin-left: -1.02em;
 }
+
 .experience h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 .education-card {
   margin-bottom: 15px;
 }
+
 .education-card p {
   margin-left: 25px;
   margin-top: 5px;
 }
+
 .experience-card ul,
 .education-card ul {
   margin-left: 2rem;
@@ -327,6 +392,7 @@ header.sticky {
 .education-card span {
   color: var(--color-primary);
 }
+
 .project-header {
   text-align: center;
   font-size: 1.5rem;
@@ -338,6 +404,7 @@ header.sticky {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -374,17 +441,21 @@ header.sticky {
   transition: all 0.6s;
   border-radius: 10px;
 }
+
 .card-container:hover .info {
   background: rgba(0, 0, 0, 0.8);
 }
+
 .card-container .info p {
   opacity: 0;
   transition: all 0.3s;
   font-size: 14px;
 }
+
 .card-container .info .tech-stacks {
   color: var(--color-title);
 }
+
 .actions button {
   transition: all 0.6s;
   margin: 10px;
@@ -392,18 +463,21 @@ header.sticky {
   font-size: 14px;
   color: var(--color-bg)
 }
+
 .actions button:hover {
   background: #33bdb2
-
 }
+
 .card-container .actions {
   opacity: 0;
   transition: 0.6s;
   margin: 10px;
 }
+
 .card-container:hover .actions {
   opacity: 1;
 }
+
 .card-container h3 {
   font-weight: 700;
   font-size: 18px;
@@ -416,13 +490,13 @@ header.sticky {
   opacity: 1;
 }
 
-.more-projects{
+.more-projects {
   display: flex;
   justify-content: center;
   margin: 15px 0 50px 0;
 }
 
-.more-projects a{
+.more-projects a {
   width: 200px;
   margin: 0 auto;
   padding: 20px;
@@ -433,7 +507,8 @@ header.sticky {
   transition: 0.3s;
 
 }
-.more-projects a:hover{
+
+.more-projects a:hover {
   background-color: black;
 }
 
@@ -448,11 +523,12 @@ header.sticky {
   text-align: center;
   border-radius: 10px;
 }
- .contact h3 {
-  color: white;
- }
 
-form{
+.contact h3 {
+  color: white;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -461,7 +537,8 @@ form{
 
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 350;
   padding: 10px 15px;
   border-radius: 10px;
@@ -473,7 +550,8 @@ form input, form textarea {
   border: none;
 }
 
-form input:focus, form textarea:focus{
+form input:focus,
+form textarea:focus {
   background: white;
   border: 2px solid rgb(255, 136, 0);
 }
@@ -495,7 +573,7 @@ form button:disabled {
   color: black;
 }
 
-form p{
+form p {
   color: rgb(241, 237, 231);
   transition: 0.2s;
 }
@@ -505,10 +583,12 @@ form p{
     padding: 16px 3%;
     transition: 0.3s;
   }
+
   header.sticky {
     padding: 10px 3%;
     transition: 0.3s;
   }
+
   section {
     padding: 40px 5%;
     transition: 0.3s;
@@ -519,6 +599,7 @@ form p{
   #menu-icon {
     display: block;
   }
+
   .navbar {
     position: absolute;
     top: -600px;
@@ -529,20 +610,25 @@ form p{
     text-align: center;
     transition: all 0.4s;
   }
+
   .navbar a {
     display: block;
     padding: 1.2rem;
     color: var(--color-bg);
   }
+
   .navber li {
     margin: 0;
   }
+
   .navbar a:hover {
     color: #c45016;
   }
+
   .navbar a::after {
     display: none;
   }
+
   .navbar.active {
     top: 100%;
   }
@@ -554,38 +640,47 @@ form p{
     /* min-height: 130vh; */
     grid-gap: 1rem;
   }
+
   .home-text {
     padding-top: 55px;
   }
+
   .home-img {
     text-align: center;
   }
+
   .home-img img {
     width: 440px;
     height: auto;
   }
+
   .grid {
     grid-template-columns: 1fr;
   }
+
   .about-img {
     text-align: center;
     margin-bottom: 30px;
   }
+
   :root {
     --font-title: 2rem;
   }
+
   section {
     padding: 3%;
     transition: 0.3s;
   }
+
   .social {
     display: none;
   }
+
   .container {
     margin: 0 10px;
   }
+
   .container-home {
     padding: 0 10px;
   }
 }
-
