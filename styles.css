@@ -70,13 +70,19 @@ a {
   width: 100%;
 }
 
+.navbar .isActive{
+  border-bottom: 3px solid var(--color-primary);
+}
+
 .navbar a .active {
   color: var(--color-primary);
 }
 
+
 .container {
   margin: 0 50px;
 }
+
 
 .container-home {
   background: linear-gradient(#634444, #2a1d1d);

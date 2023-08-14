@@ -1,22 +1,34 @@
 const header = document.querySelector("header");
+const navItems = document.querySelectorAll('.navbar li')
 
 window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+
+navItems.forEach(item => item.addEventListener('click', setIsActive))
+
+function setIsActive(){
+  navItems.forEach(item => item.classList.remove('isActive'))
+  this.classList.add('isActive')
+}
+
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
+//toggle humberger menu
 menu.onclick = () => {
   menu.classList.toggle("bx-x");
   navbar.classList.toggle("active");
 };
+
 
 window.onscroll = () => {
   menu.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
 
+//add transition between sections
 const sr = ScrollReveal({
   distance: "20px",
   duration: 2700,
@@ -33,35 +45,4 @@ sr.reveal(".education-section, .project-section, .contact", {
 });
 sr.reveal(".experience-section", { delay: 800 });
 
-// send email
-(function() {
-  emailjs.init('OjY1I9XpMetFt9q0z')}
-)()
-const btn = document.querySelector('#submit')
-const alert = document.querySelector('form p')
-document.querySelector('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
 
-   btn.textContent = 'Sending...';
-   btn.disabled = true
-   console.log(btn.disabled);
-   this.reset()
-
-   const serviceID = 'default_service';
-   const templateID = 'template_aq0h9hk';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.textContent = 'Send';
-      btn.disabled = false
-      alert.textContent = 'Thank you!'
-      setTimeout(() => {
-        alert.textContent = ''
-      }, 2000);
-    }, (err) => {
-      btn.textContent = 'Send';
-      btn.disabled = false
-      alert(JSON.stringify(err));
-    });
-});
