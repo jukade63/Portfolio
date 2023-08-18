@@ -80,7 +80,8 @@ a {
 
 
 .container {
-  margin: 0 50px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 
@@ -170,13 +171,13 @@ ul.navbar {
 }
 
 section {
-  padding: 100px 18%;
+  padding: 20px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 40px;
 }
 
 .home {
@@ -235,9 +236,10 @@ section {
 }
 
 
-.home>img {
+.home > img {
   border-radius: 50%;
   margin-bottom: 10px;
+  margin-top: 5%;
 }
 
 .home-text a {
@@ -318,7 +320,8 @@ header.sticky {
 }
 
 .about-text p {
-  line-height: 1.5;
+  padding-inline: 10px;
+
 }
 
 .skills {
@@ -337,63 +340,20 @@ header.sticky {
 }
 
 .about-section,
-.skill-section,
-.education-section,
-.experience-section {
+.skill-section {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-/* 
-.education-card ul li::before,
-.experience-card ul li::before {
-  content: "\2022";
-  color: var(--color-title);
-  font-weight: bold;
-  /* If you want it to be bold */
-  /* display: inline-block; */
-  /* Needed to add space between the bullet and the text */
-  /* width: 1em; */
-  /* Also needed for space (tweak if needed) */
-  /* margin-left: -1.02em; */
-/* } */
-
-.experience h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.education-card {
-  margin-bottom: 15px;
-}
-
-.education-card p {
-  margin-left: 25px;
-  margin-top: 5px;
-}
-
-.experience-card ul,
-.education-card ul {
-  margin-left: 2rem;
-  margin-top: 0.8rem;
-}
-
-.experience-card span,
-.education-card span {
-  color: var(--color-primary);
-} */
 
 .project-header {
   text-align: center;
   font-size: 1.5rem;
 }
 
-.project-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+.project-section {
+  margin-top: 100px;
 }
 
 .card-container {
@@ -505,71 +465,6 @@ header.sticky {
   background-color: black;
 }
 
-.contact {
-  background: rgb(133, 53, 230);
-  max-width: 500px;
-  min-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.contact h3 {
-  color: white;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 10px;
-  margin-top: 20px;
-
-}
-
-form input,
-form textarea {
-  width: 350;
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-size: 16px;
-  color: var(--color-bg);
-  background: rgb(236, 232, 232);
-  resize: none;
-  outline: none;
-  border: none;
-}
-
-form input:focus,
-form textarea:focus {
-  background: white;
-  border: 2px solid rgb(255, 136, 0);
-}
-
-form button {
-  width: 125px;
-  font-size: 1.05rem;
-  align-self: center;
-  color: rgb(43, 42, 42) !important;
-  margin-top: 5px;
-}
-
-form button:hover {
-  background: #38b5aa
-}
-
-form button:disabled {
-  background: rgb(91, 90, 90);
-  color: black;
-}
-
-form p {
-  color: rgb(241, 237, 231);
-  transition: 0.2s;
-}
 
 @media (max-width: 1425px) {
   header {
