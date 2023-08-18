@@ -1,151 +1,95 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adil's portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container-home">
-      <header>
-        <ul class="navbar">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="bx bx-menu" id="menu-icon"></div>
-      </header>
-      <section class="home" id="home">
-        <img src="./images/profile.png" alt="profile-image" width="250" class="profile-images"/>
-        <div class="home-text">
-          <h2>Hello, I'm</h2>
-          <h1>Adil Wadu</h1>
-          <p>
-            Web developer
-          </p>
-          <br>
-          <a href="./files/Adil Wadu's Resume.pdf" download=""><button class="btn btn-resume">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adil's portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-home">
+    <header>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="home" id="home">
+      <img src="./images/profile.png" alt="profile-image" width="250" class="profile-images" />
+      <div class="home-text">
+        <h1>Welcome</h1>
+        <p>
+          My name is Adil, web developer based in Thailand. I'm specialized in Javascript which I usually use to build
+          both front-end and back-end web applications.
+        </p>
+        <br>
+        <a href="./files/Adil Wadu's Resume.pdf" download=""><button class="btn btn-resume">
             <span>Resume</span>
             <i class="bx bx-download" id="download-icon"></i>
           </button></a>
-          
-         
+
+
+      </div>
+      <div class="social">
+        <a href="https://facebook.com"><img src="./images/facebook.svg" alt="facebook" /></a>
+        <a href="https://www.linkedin.com/in/adil-wadu-28987719b/"><img src="./images/linkedin.svg"
+            alt="linkedin" /></a>
+        <a href="https://github.com/jukade63"><img src="./images/github.svg" alt="github" /></a>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="grid">
+      <section class="about-section" id="about">
+        <div class="about-text">
+          <h2 class="title">About me</h2>
+          <div>
+            <p>
+              After 8 years working as pharmacist, I decided to go for a new challenge. While learning a few courses on
+              freeCodecamp,
+              I realized that this was what I had been looking for. I decided to take it more seriously by joining a
+              Javascript
+              bootcamp which take me around 6 months to complete, along with a self-taught course like The Odin Project.
+              I gained solid
+              experience through exercises and projects during training including some fullstack application which I
+              built it from scratch.
+          </div>
         </div>
-        <div class="social">
-          <a href="https://facebook.com"><img src="./images/facebook.svg" alt="facebook" /></a>
-          <a href="https://www.linkedin.com/in/adil-wadu-28987719b/"><img src="./images/linkedin.svg" alt="linkedin" /></a>
-          <a href="https://github.com/jukade63"><img src="./images/github.svg" alt="github" /></a>
+      </section>
+      <section class="skill-section">
+        <div>
+          <h2 class="title">Key skills</h2>
+          <ul class="skills">
+            <li><img src="/images/javascript.svg" alt=""></li>
+            <li><img src="/images/html.svg" alt=""></li>
+            <li><img src="/images/css.svg" alt=""></li>
+            <li><img src="/images/ts.svg" alt=""></li>
+            <li><img src="/images/react.svg" alt=""></li>
+            <li><img src="/images/nextjs.svg" alt=""></li>
+            <li><img src="/images/nodejs.svg" alt=""></li>
+            <li><img src="/images/express.svg" alt=""></li>
+            <li><img src="/images/mysql.svg" alt=""></li>
+            <li><img src="/images/mongodb.svg" alt=""></li>
+            <li><img src="/images/git.svg" alt=""></li>
+          </ul>
         </div>
       </section>
     </div>
-    <div class="container">
-      <div class="grid">
-        <section class="about-section" id="about">
-          <div class="about-text">
-            <h2 class="title">Career objective</h2>
-            <div>
-              <p>
-                Software developer with ability to learn and adapt in both
-                self-starting and collaborative environtments while staying
-                focused on achieving high-quality results. I studied extensively
-                for the past 3 years, including a 6-month fullstack Javascript
-                codecamp and successfully created my fullstack web application
-                from scratch, starting from figma design to building Rest APIs,
-                managing authentication and database integration. I always keep
-                updating my knowledge for improving my works especially with
-                fast-moving technologies.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="skill-section">
-          <div>
-            <h2 class="title">Key skills</h2>
-            <ul class="skills">
-              <li>Programming languages : HTML, CSS, Javascript, Typescript</li>
-              <li>Front-end : React, Nextjs, Tailwind, Material UI</li>
-              <li>Back-end : Nodejs, Express</li>
-              <li>Database : MySQL, MongoDB, PosgresQL</li>
-              <li>ORM, ODM : Sequelize, Prisma, Mongoose</li>
-              <li>Version Control: Git, Github, Gitlab, Bitbucket</li>
-              <li>Collaboration and Other tools : Jira, Confluent, Slack</li>
-            </ul>
-          </div>
-        </section>
-      </div>
 
-      <div class="grid">
-        <section class="education-section">
-          <h2 class="title">Education</h2>
-          <div class="education-card">
-            <h3 class="heading">Computer science</h3>
-            <span>@ University of the People</span>
-            <p class="text-small underlined">2019 - Present</p>
-            <ul>
-              <li>cGPA: 3.81</li>
-              <li>Courses taken: Computer system, programming basic, programming
-                1, programming 2, Web programming, Operating system, Statistics,
-                College algebra.</li>
-            </ul>
-          </div>
-          <div class="education-card">
-            <h3 class="heading">Fullstack developer code camp#13</h3>
-            <span>@ Software Park Thailand</span>
-            <p class="text-small underlined">May 2022 - Aug 2022</p>
-            <ul>
-              <li>Learned basic html, css, Javascript</li>
-              <li>Learned front-end framework (React)</li>
-              <li>Learned back-end technologies (Nodejs, Express)</li>
-              <li>Built fullstack project using React, Express, and MySQL</li>
-            </ul>
-          </div>
-          <div class="education-card">
-            <h3 class="heading">Full Stack Javascript</h3>
-            <span>@ The Odin Project</span>
-            <p class="text-small underlined">Mar 2023- Present</p>
-            <ul>
-              <li>Learned advanced Javascript (Linting, Webpack, Asynchronous, APIs)</li>
-              <li>Learned intermediate, advanced HTML and CSS (Animation, Accessibility, Responsive design)</li>
-              <li>Built projects (Calculator, Admin Dashboard, Restaurant page)</li>
-            </ul>
-          </div>
-          <div class="education-card">
-            <h3 class="heading">Bachelor of Pharmacy</h3>
-            <span>@ Walailak University</span>
-            <p class="text-small underlined">2008 - 2013</p>
-          </div>
-        </section>
-        <section class="experience-section">
-          <h2 class="title">Work experience</h2>
-          <div class="experience-card">
-            <h3 class="heading">Software engineer</h3>
-            <span>@ Shippop</span>
-            <p class="text-small underlined">Dec - 2022</p>
-            <ul>
-              <li>Developed new internal admin page that keeps track of
-                long-waiting on-delivery orders. The new page displays data from
-                database in pages and be able of exporting to spreadsheet file.</li>
-              <li>Pushed codes to git-based cloud to get the code reviewed, and released.</li>
-              <li>Worked collaboratively under agile both onsite and remotely by leveraging PMS tools like Jira, Slack and so on.</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <section class="project-section" id="projects">
-        <h2 class="title">Personal projects</h2>
-        <div class="project-cards">
+    <section class="project-section" id="projects">
+      <h2 class="title">Personal projects</h2>
+      <div class="project-cards">
+          <div class="grid">
           <div class="card-container">
             <h3>Tell your pharmacist</h3>
             <div class="wrapper">
@@ -163,14 +107,9 @@
                   APIs, Stripe, Firebase
                 </p>
                 <div class="actions">
-                  <a href="https://next-switter.vercel.app/" target="_blank"
-                    ><button  class="btn">Live demo</button></a
-                  >
-                  <a
-                    href="https://github.com/jukade63/next-switter"
-                    target="_blank"
-                    ><button  class="btn">Code</button></a
-                  >
+                  <a href="https://next-switter.vercel.app/" target="_blank"><button class="btn">Live demo</button></a>
+                  <a href="https://github.com/jukade63/next-switter" target="_blank"><button
+                      class="btn">Code</button></a>
                 </div>
               </div>
             </div>
@@ -189,14 +128,9 @@
                   Prisma, MongoDB
                 </p>
                 <div class="actions">
-                  <a href="https://next-switter.vercel.app/" target="_blank"
-                    ><button  class="btn">Live demo</button></a
-                  >
-                  <a
-                    href="https://github.com/jukade63/next-switter"
-                    target="_blank"
-                    ><button  class="btn">Code</button></a
-                  >
+                  <a href="https://next-switter.vercel.app/" target="_blank"><button class="btn">Live demo</button></a>
+                  <a href="https://github.com/jukade63/next-switter" target="_blank"><button
+                      class="btn">Code</button></a>
                 </div>
               </div>
             </div>
@@ -213,14 +147,8 @@
                 </p>
                 <p class="tech-stacks">Tech used : React, Recharts, Tailwind</p>
                 <div class="actions">
-                  <a href="https://pollucheck.vercel.app/" target="_blank"
-                    ><button  class="btn">Live demo</button></a
-                  >
-                  <a
-                    href="https://github.com/jukade63/pollucheck"
-                    target="_blank"
-                    ><button  class="btn">Code</button></a
-                  >
+                  <a href="https://pollucheck.vercel.app/" target="_blank"><button class="btn">Live demo</button></a>
+                  <a href="https://github.com/jukade63/pollucheck" target="_blank"><button class="btn">Code</button></a>
                 </div>
               </div>
             </div>
@@ -236,16 +164,9 @@
                 </p>
                 <p class="tech-stacks">Tech used : Javascript, HTML, CSS</p>
                 <div class="actions">
-                  <a
-                    href="https://jukade63.github.io/calculator/"
-                    target="_blank"
-                    ><button  class="btn">Live demo</button></a
-                  >
-                  <a
-                    href="https://github.com/jukade63/calculator"
-                    target="_blank"
-                    ><button  class="btn">Code</button></a
-                  >
+                  <a href="https://jukade63.github.io/calculator/" target="_blank"><button class="btn">Live
+                      demo</button></a>
+                  <a href="https://github.com/jukade63/calculator" target="_blank"><button class="btn">Code</button></a>
                 </div>
               </div>
             </div>
@@ -261,16 +182,10 @@
                 </p>
                 <p class="tech-stacks">Tech used : Javascript, HTML, CSS</p>
                 <div class="actions">
-                  <a
-                    href="https://jukade63.github.io/admin-dashboard/"
-                    target="_blank"
-                    ><button  class="btn">Live demo</button></a
-                  >
-                  <a
-                    href="https://github.com/jukade63/admin-dashboard"
-                    target="_blank"
-                    ><button class="btn">Code</button></a
-                  >
+                  <a href="https://jukade63.github.io/admin-dashboard/" target="_blank"><button class="btn">Live
+                      demo</button></a>
+                  <a href="https://github.com/jukade63/admin-dashboard" target="_blank"><button
+                      class="btn">Code</button></a>
                 </div>
               </div>
             </div>
@@ -281,55 +196,26 @@
               <img src="./images/restaurant-page.png" alt="" />
               <div class="info">
                 <p>
-                  Provide static indormation about opening time for the restaurant, available menus, 
-                  and contact channel 
+                  Provide static indormation about opening time for the restaurant, available menus,
+                  and contact channel
                 </p>
                 <p class="tech-stacks">Tech used : Javascript, HTML, CSS, Webpack</p>
                 <div class="actions">
-                  <a
-                    href="https://jukade63.github.io/TOP-Restaurant-Page/"
-                    target="_blank"
-                    ><button class="btn">Live demo</button></a
-                  >
-                  <a
-                    href="https://github.com/jukade63/TOP-Restaurant-Page"
-                    target="_blank"
-                    ><button class="btn">Code</button></a
-                  >
+                  <a href="https://jukade63.github.io/TOP-Restaurant-Page/" target="_blank"><button class="btn">Live
+                      demo</button></a>
+                  <a href="https://github.com/jukade63/TOP-Restaurant-Page" target="_blank"><button
+                      class="btn">Code</button></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <div class="more-projects"><a href="https://github.com/jukade63" target="_blank">More projects...</a></div>
-
-      <section class="contact" id="contact">
-        <div class="container">
-          <h3>Send me an email</h3>
-          <form>
-              <input
-                type="email"
-                name="from"
-                placeholder="Your email"
-                required
-              />
-              <textarea
-                type="text"
-                name="message"
-                placeholder="Message"
-                rows="7"
-                required
-                ></textarea>
-              <button class="btn" type="submit" name="submit" id="submit">Send</button>
-              <p></p>
-            </form>
-          </div>
+        <div class="more-projects"><a href="https://github.com/jukade63" target="_blank">More projects...</a></div>
       </section>
     </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="script.js"></script>
-  </body>
+</body>
+
 </html>
