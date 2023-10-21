@@ -28,21 +28,21 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-//add transition between sections
-const sr = ScrollReveal({
-  distance: "20px",
-  duration: 2700,
-  reset: true,
-});
+// //add transition between sections
+// const sr = ScrollReveal({
+//   distance: "20px",
+//   duration: 2700,
+//   reset: true,
+// });
 
-sr.reveal(".home-text", { delay: 350, origin: "top" });
-sr.reveal(".profile-img", {delay: 400})
-sr.reveal(".about-text", { delay: 350, origin: "left" });
-sr.reveal(".skills", { delay: 380, origin: "right" });
-sr.reveal(".education-section, .project-section, .contact", {
-  delay: 300,
-  origin: "top",
-});
-sr.reveal(".experience-section", { delay: 800 });
+// sr.reveal(".home-text", { delay: 350, origin: "top" });
+// sr.reveal(".profile-img", {delay: 400})
+// sr.reveal(".about-text", { delay: 350, origin: "left" });
+// sr.reveal(".skills", { delay: 380, origin: "right" });
+// sr.reveal(".education-section, .project-section, .contact", {
+//   delay: 300,
+//   origin: "top",
+// });
+// sr.reveal(".experience-section", { delay: 800 });
 
 
